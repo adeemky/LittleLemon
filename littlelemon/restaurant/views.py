@@ -8,6 +8,7 @@ from rest_framework.decorators import permission_classes
 
 # Create your views here.
 def index(request):
+    home = "#"
     return render(request, "index.html")
 
 class MenuItemsView(generics.ListCreateAPIView):
